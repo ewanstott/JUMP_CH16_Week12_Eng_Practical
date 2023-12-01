@@ -48,20 +48,16 @@
 // console.log(answer);
 
 // fastest approcach Ternary Approch (condition ? exprIfTrue : exprIfFalse)
+// for (let i = 1; i < 20; i++) {
+//   let result = "";
+//   result += i % 3 ? "" : "Fizz"; // Check if i is divisible by 3
+//   result += i % 5 ? "" : "Buzz"; // Check if i is divisible by 5
+//   console.log(result || i); // Output "Fizz", "Buzz", "FizzBuzz", or the number itself
+// }
 
 for (let i = 1; i < 20; i++) {
   let result = "";
-  result += i % 3 ? "" : "Fizz"; // can remove === 0 since JS considers '0' as falsy here
+  result += i % 3 ? "" : "Fizz";
   result += i % 5 ? "" : "Buzz";
   console.log(result || i);
 }
-
-// for (let i = 1; i < 20; i++) {
-//   let result = "";
-
-//   result += i % 15 === 0 ? "FizzBuzz" : "";
-
-//   result += i % 3 === 0 || i % 5 === 0 ? "Fizz" : "Buzz";
-
-//   console.log(i);
-// }
