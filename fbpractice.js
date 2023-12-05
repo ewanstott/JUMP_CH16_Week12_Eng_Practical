@@ -61,3 +61,10 @@ for (let i = 1; i < 20; i++) {
   result += i % 5 ? "" : "Buzz";
   console.log(result || i);
 }
+
+for (i = 1; i < 20; i++) {
+  let result = "";
+  result += i % 3 ? "" : "Fizz";
+  result += i % 5 ? "" : "Buzz";
+  console.log(result || i);
+}
